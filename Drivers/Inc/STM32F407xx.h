@@ -290,6 +290,38 @@ typedef struct
 #define USART6_PCCK_DI() (RCC->APB1ENR &= ~ (1 << 5))
 
 
+
+#define IRQ_NO_EXTI0 		6
+#define IRQ_NO_EXTI1 		7
+#define IRQ_NO_EXTI2 		8
+#define IRQ_NO_EXTI3 		9
+#define IRQ_NO_EXTI4 		10
+#define IRQ_NO_EXTI9_5 		23
+#define IRQ_NO_EXTI15_10 	40
+#define IRQ_NO_SPI1			35
+#define IRQ_NO_SPI2         36
+#define IRQ_NO_SPI3         51
+#define IRQ_NO_SPI4
+#define IRQ_NO_I2C1_EV     31
+#define IRQ_NO_I2C1_ER     32
+#define IRQ_NO_USART1	    37
+#define IRQ_NO_USART2	    38
+#define IRQ_NO_USART3	    39
+#define IRQ_NO_UART4	    52
+#define IRQ_NO_UART5	    53
+#define IRQ_NO_USART6	    71
+/*
+ * macros for all the possible priority levels
+ */
+#define NVIC_IRQ_PRI0    0
+#define NVIC_IRQ_PRI1    1
+#define NVIC_IRQ_PRI2    2
+#define NVIC_IRQ_PRI3    3
+#define NVIC_IRQ_PRI4    4
+#define NVIC_IRQ_PRI5    5
+#define NVIC_IRQ_PRI6    6
+#define NVIC_IRQ_PRI7    7
+
 /*
  * Clock Disable Macros for SYSCFG peripheral
  */
