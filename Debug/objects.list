@@ -1,5 +1,6 @@
 "./Drivers/Src/STM32F407xx_GPIO_driver.o"
-"./Src/02led_button_interrupt.o"
+"./Drivers/Src/STM32F407xx_SPI_driver.o"
+"./Src/03_Tx_test.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"
 "./Startup/startup_stm32f407vgtx.o"
