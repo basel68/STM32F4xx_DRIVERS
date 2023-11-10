@@ -6,7 +6,7 @@
  */
 
 
-#include<string.h>
+#include <string.h>
 #include "stm32f407xx.h"
 
 /*
