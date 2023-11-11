@@ -2,7 +2,7 @@
  * STM32F407xx_SPI_driver.h
  *
  *  Created on: Nov 9, 2023
- *      Author: Lenovo
+ *      Author: Bassel
  */
 
 #ifndef INC_STM32F407XX_SPI_DRIVER_H_
@@ -39,12 +39,8 @@ typedef struct
 	uint8_t 		TxState;	/* !< To store Tx state > */
 	uint8_t 		RxState;	/* !< To store Rx state > */
 }SPI_Handle_t;
-/*
- * SPI related status flags definitions
- */
-#define SPI_TXE_FLAG    ( 1 << SPI_SR_TXE)
-#define SPI_RXNE_FLAG   ( 1 << SPI_SR_RXNE)
-#define SPI_BUSY_FLAG   ( 1 << SPI_SR_BSY)
+
+
 /*
  * SPI application states
  */
@@ -112,6 +108,16 @@ typedef struct
 #define SPI_SSM_EN     1
 #define SPI_SSM_DI     0
 
+
+/*
+ * SPI related status flags definitions
+ */
+#define SPI_TXE_FLAG    ( 1 << SPI_SR_TXE)
+#define SPI_RXNE_FLAG   ( 1 << SPI_SR_RXNE)
+#define SPI_BUSY_FLAG   ( 1 << SPI_SR_BSY)
+
+
+
 /******************************************************************************************
  *								APIs supported by this driver
  *		 For more information about the APIs check the function definitions
@@ -160,4 +166,5 @@ void SPI_CloseReception(SPI_Handle_t *pSPIHandle);
  * Application callback
  */
 void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv);
+
 #endif /* INC_STM32F407XX_SPI_DRIVER_H_ */
