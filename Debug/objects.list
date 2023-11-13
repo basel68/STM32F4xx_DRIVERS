@@ -1,4 +1,5 @@
 "./Drivers/Src/STM32F407xx_GPIO_driver.o"
+"./Drivers/Src/STM32F407xx_I2C_driver.o"
 "./Drivers/Src/STM32F407xx_SPI_driver.o"
 "./Src/04SPI_txonly_arduino.o"
 "./Src/syscalls.o"

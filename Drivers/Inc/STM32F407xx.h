@@ -157,19 +157,8 @@ typedef struct
   __vo uint32_t DCKCFGR2;      /*!< ,     										Address offset: 0x94 */
 
 } RCC_RegDef_t;
-// peripherals definition typecasted
 
-#define GPIOA  				((GPIO_RegDef_t*)GPIOA_BASEADDR)
-#define GPIOB  				((GPIO_RegDef_t*)GPIOB_BASEADDR)
-#define GPIOC  				((GPIO_RegDef_t*)GPIOC_BASEADDR)
-#define GPIOD  				((GPIO_RegDef_t*)GPIOD_BASEADDR)
-#define GPIOE  				((GPIO_RegDef_t*)GPIOE_BASEADDR)
-#define GPIOF  				((GPIO_RegDef_t*)GPIOF_BASEADDR)
-#define GPIOG  				((GPIO_RegDef_t*)GPIOG_BASEADDR)
-#define GPIOH  				((GPIO_RegDef_t*)GPIOH_BASEADDR)
-#define GPIOI  				((GPIO_RegDef_t*)GPIOI_BASEADDR)
 
-#define RCC 				((RCC_RegDef_t*)RCC_BASEADDR)
 /*
  * Base addresses of peripherals which are hanging on APB2 bus
  * TODO : Complete for all other peripherals
@@ -194,7 +183,22 @@ typedef struct
 	__vo uint32_t I2SCFGR;    /*!< TODO,     										Address offset: 0x1C */
 	__vo uint32_t I2SPR;      /*!< TODO,     										Address offset: 0x20 */
 } SPI_RegDef_t;
-
+/*
+ * peripheral register definition structure for I2C
+ */
+typedef struct
+{
+  __vo uint32_t CR1;        /*!< TODO,     										Address offset: 0x00 */
+  __vo uint32_t CR2;        /*!< TODO,     										Address offset: 0x04 */
+  __vo uint32_t OAR1;       /*!< TODO,     										Address offset: 0x08 */
+  __vo uint32_t OAR2;       /*!< TODO,     										Address offset: 0x0C */
+  __vo uint32_t DR;         /*!< TODO,     										Address offset: 0x10 */
+  __vo uint32_t SR1;        /*!< TODO,     										Address offset: 0x14 */
+  __vo uint32_t SR2;        /*!< TODO,     										Address offset: 0x18 */
+  __vo uint32_t CCR;        /*!< TODO,     										Address offset: 0x1C */
+  __vo uint32_t TRISE;      /*!< TODO,     										Address offset: 0x20 */
+  __vo uint32_t FLTR;       /*!< TODO,     										Address offset: 0x24 */
+}I2C_RegDef_t;
 /*
  * peripheral register definition structure for EXTI
  */
@@ -221,7 +225,32 @@ typedef struct
 	uint32_t      RESERVED2[2];  /*!<                                             Reserved, 0x24-0x28 	    */
 	__vo uint32_t CFGR;         /*!< TODO                                         Address offset: 0x2C   	*/
 } SYSCFG_RegDef_t;
+/*
+ * peripheral definitions ( Peripheral base addresses typecasted to xxx_RegDef_t)
+ */
 
+#define GPIOA  				((GPIO_RegDef_t*)GPIOA_BASEADDR)
+#define GPIOB  				((GPIO_RegDef_t*)GPIOB_BASEADDR)
+#define GPIOC  				((GPIO_RegDef_t*)GPIOC_BASEADDR)
+#define GPIOD  				((GPIO_RegDef_t*)GPIOD_BASEADDR)
+#define GPIOE  				((GPIO_RegDef_t*)GPIOE_BASEADDR)
+#define GPIOF  				((GPIO_RegDef_t*)GPIOF_BASEADDR)
+#define GPIOG  				((GPIO_RegDef_t*)GPIOG_BASEADDR)
+#define GPIOH  				((GPIO_RegDef_t*)GPIOH_BASEADDR)
+#define GPIOI  				((GPIO_RegDef_t*)GPIOI_BASEADDR)
+
+#define RCC 				((RCC_RegDef_t*)RCC_BASEADDR)
+#define EXTI				((EXTI_RegDef_t*)EXTI_BASEADDR)
+#define SYSCFG				((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
+
+
+#define SPI1  				((SPI_RegDef_t*)SPI1_BASEADDR)
+#define SPI2  				((SPI_RegDef_t*)SPI2_BASEADDR)
+#define SPI3  				((SPI_RegDef_t*)SPI3_BASEADDR)
+
+#define I2C1  				((I2C_RegDef_t*)I2C1_BASEADDR)
+#define I2C2  				((I2C_RegDef_t*)I2C2_BASEADDR)
+#define I2C3  				((I2C_RegDef_t*)I2C3_BASEADDR)
 
 #define EXTI				((EXTI_RegDef_t*)EXTI_BASEADDR)
 #define SYSCFG				((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
@@ -365,6 +394,11 @@ typedef struct
 #define SPI2_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 14)); (RCC->APB1RSTR &= ~(1 << 14)); }while(0)
 #define SPI3_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 15)); (RCC->APB1RSTR &= ~(1 << 15)); }while(0)
 
+
+#define I2C1_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 21)); (RCC->APB1RSTR &= ~(1 << 21)); }while(0)
+#define I2C2_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 22)); (RCC->APB1RSTR &= ~(1 << 22)); }while(0)
+#define I2C3_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 23)); (RCC->APB1RSTR &= ~(1 << 23)); }while(0)
+
 /*
  * This macro returns a code( between 0 to 7) for a given GPIO base address(x)
  */
@@ -424,8 +458,36 @@ typedef struct
 #define SPI_SR_BSY					 	7
 #define SPI_SR_FRE					 	8
 
+/******************************************************************************************
+ *Bit position definitions of I2C peripheral
+ ******************************************************************************************/
+/*
+ * Bit position definitions I2C_CR1
+ */
+#define I2C_CR1_PE						0
+#define I2C_CR1_NOSTRETCH  				7
+#define I2C_CR1_START 					8
+#define I2C_CR1_STOP  				 	9
+#define I2C_CR1_ACK 				 	10
+#define I2C_CR1_SWRST  				 	15
 
+/*
+ * Bit position definitions I2C_CR2
+ */
+#define I2C_CR2_FREQ				 	0
+#define I2C_CR2_ITERREN				 	8
+#define I2C_CR2_ITEVTEN				 	9
+#define I2C_CR2_ITBUFEN 			    10
+
+/*
+ * Bit position definitions I2C_OAR1
+ */
+#define I2C_OAR1_ADD0    				 0
+#define I2C_OAR1_ADD71 				 	 1
+#define I2C_OAR1_ADD98  			 	 8
+#define I2C_OAR1_ADDMODE   			 	15
 
 #include <STM32F407xx_GPIO_driver.h>
 #include <STM32F407xx_SPI_driver.h>
+#include <STM32F407xx_I2C_driver.h>
 #endif /* INC_STM32F407XX_H_ */
