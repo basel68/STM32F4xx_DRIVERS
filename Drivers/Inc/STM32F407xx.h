@@ -487,6 +487,39 @@ typedef struct
 #define I2C_OAR1_ADD98  			 	 8
 #define I2C_OAR1_ADDMODE   			 	15
 
+/*
+ * Bit position definitions I2C_SR1
+ */
+
+#define I2C_SR1_SB 					 	0
+#define I2C_SR1_ADDR 				 	1
+#define I2C_SR1_BTF 					2
+#define I2C_SR1_ADD10 					3
+#define I2C_SR1_STOPF 					4
+#define I2C_SR1_RXNE 					6
+#define I2C_SR1_TXE 					7
+#define I2C_SR1_BERR 					8
+#define I2C_SR1_ARLO 					9
+#define I2C_SR1_AF 					 	10
+#define I2C_SR1_OVR 					11
+#define I2C_SR1_TIMEOUT 				14
+
+/*
+ * Bit position definitions I2C_SR2
+ */
+#define I2C_SR2_MSL						0
+#define I2C_SR2_BUSY 					1
+#define I2C_SR2_TRA 					2
+#define I2C_SR2_GENCALL 				4
+#define I2C_SR2_DUALF 					7
+
+/*
+ * Bit position definitions I2C_CCR
+ */
+#define I2C_CCR_CCR 					 0
+#define I2C_CCR_DUTY 					14
+#define I2C_CCR_FS  				 	15
+
 #include <STM32F407xx_GPIO_driver.h>
 #include <STM32F407xx_SPI_driver.h>
 #include <STM32F407xx_I2C_driver.h>

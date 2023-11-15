@@ -25,7 +25,7 @@ uint32_t RCC_GetPCLK1Value(void){
 			SystemClk = 8000000;
 		}else if (clksrc == 2)
 		{
-			SystemClk = RCC_GetPLLOutputClock();
+//			SystemClk = RCC_GetPLLOutputClock();
 		}
 
 		//for ahb

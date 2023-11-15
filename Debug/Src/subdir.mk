@@ -5,17 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/04SPI_txonly_arduino.c \
+../Src/05_I2C_tx_master_test.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/04SPI_txonly_arduino.o \
+./Src/05_I2C_tx_master_test.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/04SPI_txonly_arduino.d \
+./Src/05_I2C_tx_master_test.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d 
 
@@ -27,7 +27,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/04SPI_txonly_arduino.cyclo ./Src/04SPI_txonly_arduino.d ./Src/04SPI_txonly_arduino.o ./Src/04SPI_txonly_arduino.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/05_I2C_tx_master_test.cyclo ./Src/05_I2C_tx_master_test.d ./Src/05_I2C_tx_master_test.o ./Src/05_I2C_tx_master_test.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 
