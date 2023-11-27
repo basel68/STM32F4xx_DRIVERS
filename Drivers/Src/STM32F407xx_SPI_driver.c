@@ -2,7 +2,7 @@
  * STM32F407xx_SPI_driver.c
  *
  *  Created on: Nov 9, 2023
- *      Author: Lenovo
+ *      Author: Bassel
  */
 
 #include <STM32F407xx_SPI_driver.h>

@@ -63,6 +63,109 @@ Discarded input sections
  .debug_str     0x0000000000000000       0xe2 D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1c D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/ds1307.o
+ .text          0x0000000000000000        0x0 ./Bsp/Src/ds1307.o
+ .data          0x0000000000000000        0x0 ./Bsp/Src/ds1307.o
+ .bss           0x0000000000000000        0x0 ./Bsp/Src/ds1307.o
+ .bss.g_ds1307I2cHandle
+                0x0000000000000000       0x28 ./Bsp/Src/ds1307.o
+ .text.ds1307_init
+                0x0000000000000000       0x3c ./Bsp/Src/ds1307.o
+ .text.ds1307_i2c_pin_config
+                0x0000000000000000       0x78 ./Bsp/Src/ds1307.o
+ .text.ds1307_i2c_config
+                0x0000000000000000       0x2c ./Bsp/Src/ds1307.o
+ .text.ds1307_write
+                0x0000000000000000       0x38 ./Bsp/Src/ds1307.o
+ .text.ds1307_read
+                0x0000000000000000       0x3c ./Bsp/Src/ds1307.o
+ .debug_info    0x0000000000000000      0x521 ./Bsp/Src/ds1307.o
+ .debug_abbrev  0x0000000000000000      0x17c ./Bsp/Src/ds1307.o
+ .debug_aranges
+                0x0000000000000000       0x40 ./Bsp/Src/ds1307.o
+ .debug_rnglists
+                0x0000000000000000       0x2b ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x1a9 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0xab4 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x174 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x22 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x8e ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x51 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x103 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x6a ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x1df ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x7b4 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0xc4 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0xbe ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0xd0 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x108 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x61 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x2a ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x43 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x34 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x16 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x43 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x34 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x10 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x58 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x8e ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x1c ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x177 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000      0x369 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x10 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x35 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x20 ./Bsp/Src/ds1307.o
+ .debug_macro   0x0000000000000000       0x94 ./Bsp/Src/ds1307.o
+ .debug_line    0x0000000000000000      0x75c ./Bsp/Src/ds1307.o
+ .debug_str     0x0000000000000000     0xa521 ./Bsp/Src/ds1307.o
+ .comment       0x0000000000000000       0x44 ./Bsp/Src/ds1307.o
+ .debug_frame   0x0000000000000000       0xbc ./Bsp/Src/ds1307.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Bsp/Src/ds1307.o
+ .group         0x0000000000000000        0xc ./Bsp/Src/lcd.o
+ .text          0x0000000000000000        0x0 ./Bsp/Src/lcd.o
+ .data          0x0000000000000000        0x0 ./Bsp/Src/lcd.o
+ .bss           0x0000000000000000        0x0 ./Bsp/Src/lcd.o
+ .debug_info    0x0000000000000000       0x22 ./Bsp/Src/lcd.o
+ .debug_abbrev  0x0000000000000000       0x12 ./Bsp/Src/lcd.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./Bsp/Src/lcd.o
+ .debug_macro   0x0000000000000000       0x11 ./Bsp/Src/lcd.o
+ .debug_macro   0x0000000000000000      0xab4 ./Bsp/Src/lcd.o
+ .debug_line    0x0000000000000000       0x31 ./Bsp/Src/lcd.o
+ .debug_str     0x0000000000000000     0x2dd5 ./Bsp/Src/lcd.o
+ .comment       0x0000000000000000       0x44 ./Bsp/Src/lcd.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Bsp/Src/lcd.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_GPIO_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_GPIO_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_GPIO_driver.o
@@ -95,6 +198,18 @@ Discarded input sections
                 0x0000000000000000       0x54 ./Drivers/Src/STM32F407xx_GPIO_driver.o
  .text.GPIO_IRQHandling
                 0x0000000000000000       0x40 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000      0xab4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000      0x174 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0x8e ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0x51 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000      0x103 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0x6a ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000      0x1df ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0xbe ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0xd0 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000      0x108 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000000       0xc4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_I2C_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_I2C_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Src/STM32F407xx_I2C_driver.o
@@ -215,6 +330,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x103 ./Drivers/Src/STM32F407xx_RCC_driver.o
  .debug_macro   0x0000000000000000       0x6a ./Drivers/Src/STM32F407xx_RCC_driver.o
  .debug_macro   0x0000000000000000      0x1df ./Drivers/Src/STM32F407xx_RCC_driver.o
+ .debug_macro   0x0000000000000000      0x7b4 ./Drivers/Src/STM32F407xx_RCC_driver.o
  .debug_macro   0x0000000000000000       0xc4 ./Drivers/Src/STM32F407xx_RCC_driver.o
  .debug_macro   0x0000000000000000       0xbe ./Drivers/Src/STM32F407xx_RCC_driver.o
  .debug_macro   0x0000000000000000       0xd0 ./Drivers/Src/STM32F407xx_RCC_driver.o
@@ -607,6 +723,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Src/uart_tx.o
  .debug_macro   0x0000000000000000      0x147 ./Src/uart_tx.o
  .debug_macro   0x0000000000000000       0x35 ./Src/uart_tx.o
+ .debug_macro   0x0000000000000000       0x20 ./Src/uart_tx.o
  .debug_macro   0x0000000000000000      0x103 ./Src/uart_tx.o
  .debug_macro   0x0000000000000000       0x6a ./Src/uart_tx.o
  .debug_macro   0x0000000000000000      0x1df ./Src/uart_tx.o
@@ -862,6 +979,8 @@ Linker script and memory map
 LOAD D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+LOAD ./Bsp/Src/ds1307.o
+LOAD ./Bsp/Src/lcd.o
 LOAD ./Drivers/Src/STM32F407xx_GPIO_driver.o
 LOAD ./Drivers/Src/STM32F407xx_I2C_driver.o
 LOAD ./Drivers/Src/STM32F407xx_RCC_driver.o
@@ -1268,31 +1387,17 @@ LOAD D:/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .debug_rnglists
                 0x0000000000000106       0x19 ./Startup/startup_stm32f407vgtx.o
 
-.debug_macro    0x0000000000000000     0x2963
+.debug_macro    0x0000000000000000      0xdc0
  .debug_macro   0x0000000000000000       0xcc ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x00000000000000cc      0xab4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000b80      0x174 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000cf4       0x22 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000d16       0x8e ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000da4       0x51 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000df5      0x103 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000ef8       0x6a ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000000f62      0x1df ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000001141      0x7b4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x00000000000018f5       0xbe ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x00000000000019b3       0xd0 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000001a83      0x108 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000001b8b       0xc4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
- .debug_macro   0x0000000000001c4f       0xd0 ./Drivers/Src/STM32F407xx_RCC_driver.o
- .debug_macro   0x0000000000001d1f      0x7b4 ./Drivers/Src/STM32F407xx_RCC_driver.o
- .debug_macro   0x00000000000024d3       0xcc ./Drivers/Src/STM32F407xx_USART_driver.o
- .debug_macro   0x000000000000259f      0x1ce ./Src/uart_tx.o
- .debug_macro   0x000000000000276d       0x16 ./Src/uart_tx.o
- .debug_macro   0x0000000000002783       0x97 ./Src/uart_tx.o
- .debug_macro   0x000000000000281a       0xfd ./Src/uart_tx.o
- .debug_macro   0x0000000000002917       0x16 ./Src/uart_tx.o
- .debug_macro   0x000000000000292d       0x16 ./Src/uart_tx.o
- .debug_macro   0x0000000000002943       0x20 ./Src/uart_tx.o
+ .debug_macro   0x00000000000000cc      0x7b4 ./Drivers/Src/STM32F407xx_GPIO_driver.o
+ .debug_macro   0x0000000000000880       0xd0 ./Drivers/Src/STM32F407xx_RCC_driver.o
+ .debug_macro   0x0000000000000950       0xcc ./Drivers/Src/STM32F407xx_USART_driver.o
+ .debug_macro   0x0000000000000a1c      0x1ce ./Src/uart_tx.o
+ .debug_macro   0x0000000000000bea       0x16 ./Src/uart_tx.o
+ .debug_macro   0x0000000000000c00       0x97 ./Src/uart_tx.o
+ .debug_macro   0x0000000000000c97       0xfd ./Src/uart_tx.o
+ .debug_macro   0x0000000000000d94       0x16 ./Src/uart_tx.o
+ .debug_macro   0x0000000000000daa       0x16 ./Src/uart_tx.o
 
 .debug_line     0x0000000000000000     0x237b
  .debug_line    0x0000000000000000      0xa49 ./Drivers/Src/STM32F407xx_GPIO_driver.o

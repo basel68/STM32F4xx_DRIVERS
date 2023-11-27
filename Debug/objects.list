@@ -1,3 +1,5 @@
+"./Bsp/Src/ds1307.o"
+"./Bsp/Src/lcd.o"
 "./Drivers/Src/STM32F407xx_GPIO_driver.o"
 "./Drivers/Src/STM32F407xx_I2C_driver.o"
 "./Drivers/Src/STM32F407xx_RCC_driver.o"
