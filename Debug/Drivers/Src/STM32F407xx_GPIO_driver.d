@@ -5,10 +5,14 @@ Drivers/Src/STM32F407xx_GPIO_driver.o: \
  C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_SPI_driver.h \
  C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx.h \
  C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_I2C_driver.h \
- C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/stm32f407xx.h
+ C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/stm32f407xx.h \
+ C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_RCC_driver.h \
+ C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_USART_driver.h
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_GPIO_driver.h:
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407XX.h:
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_SPI_driver.h:
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx.h:
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_I2C_driver.h:
 C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/stm32f407xx.h:
+C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_RCC_driver.h:
+C:/Users/Lenovo/Desktop/MCU\ DRIVERS/STM32F4xx_Drivers/Drivers/Inc/STM32F407xx_USART_driver.h:

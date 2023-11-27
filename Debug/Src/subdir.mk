@@ -5,19 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/05_I2C_tx_master_test.c \
 ../Src/syscalls.c \
-../Src/sysmem.c 
+../Src/sysmem.c \
+../Src/uart_tx.c 
 
 OBJS += \
-./Src/05_I2C_tx_master_test.o \
 ./Src/syscalls.o \
-./Src/sysmem.o 
+./Src/sysmem.o \
+./Src/uart_tx.o 
 
 C_DEPS += \
-./Src/05_I2C_tx_master_test.d \
 ./Src/syscalls.d \
-./Src/sysmem.d 
+./Src/sysmem.d \
+./Src/uart_tx.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -27,7 +27,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/05_I2C_tx_master_test.cyclo ./Src/05_I2C_tx_master_test.d ./Src/05_I2C_tx_master_test.o ./Src/05_I2C_tx_master_test.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/uart_tx.cyclo ./Src/uart_tx.d ./Src/uart_tx.o ./Src/uart_tx.su
 
 .PHONY: clean-Src
 
