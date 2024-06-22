@@ -160,67 +160,58 @@ typedef struct
 
 
 /*
- * Base addresses of peripherals which are hanging on APB2 bus
- * TODO : Complete for all other peripherals
- */
-#define EXTI_BASEADDR						(APB2PERIPH_BASEADDR + 0x3C00)
-#define SPI1_BASEADDR						(APB2PERIPH_BASEADDR + 0x3000)
-#define SYSCFG_BASEADDR        				(APB2PERIPH_BASEADDR + 0x3800)
-#define USART1_BASEADDR						(APB2PERIPH_BASEADDR + 0x1000)
-#define USART6_BASEADDR						(APB2PERIPH_BASEADDR + 0x1400)
-/*
  * peripheral register definition structure for SPI
  */
 typedef struct
 {
-	__vo uint32_t CR1;        /*!< TODO,     										Address offset: 0x00 */
-	__vo uint32_t CR2;        /*!< TODO,     										Address offset: 0x04 */
-	__vo uint32_t SR;         /*!< TODO,     										Address offset: 0x08 */
-	__vo uint32_t DR;         /*!< TODO,     										Address offset: 0x0C */
-	__vo uint32_t CRCPR;      /*!< TODO,     										Address offset: 0x10 */
-	__vo uint32_t RXCRCR;     /*!< TODO,     										Address offset: 0x14 */
-	__vo uint32_t TXCRCR;     /*!< TODO,     										Address offset: 0x18 */
-	__vo uint32_t I2SCFGR;    /*!< TODO,     										Address offset: 0x1C */
-	__vo uint32_t I2SPR;      /*!< TODO,     										Address offset: 0x20 */
+	__vo uint32_t CR1;        /*!<      										Address offset: 0x00 */
+	__vo uint32_t CR2;        /*!<      										Address offset: 0x04 */
+	__vo uint32_t SR;         /*!<  											Address offset: 0x08 */
+	__vo uint32_t DR;         /*!<												Address offset: 0x0C */
+	__vo uint32_t CRCPR;      /*!<   											Address offset: 0x10 */
+	__vo uint32_t RXCRCR;     /*!<      										Address offset: 0x14 */
+	__vo uint32_t TXCRCR;     /*!<      										Address offset: 0x18 */
+	__vo uint32_t I2SCFGR;    /*!<   											Address offset: 0x1C */
+	__vo uint32_t I2SPR;      /*!<      										Address offset: 0x20 */
 } SPI_RegDef_t;
 /*
  * peripheral register definition structure for I2C
  */
 typedef struct
 {
-  __vo uint32_t CR1;        /*!< TODO,     										Address offset: 0x00 */
-  __vo uint32_t CR2;        /*!< TODO,     										Address offset: 0x04 */
-  __vo uint32_t OAR1;       /*!< TODO,     										Address offset: 0x08 */
-  __vo uint32_t OAR2;       /*!< TODO,     										Address offset: 0x0C */
-  __vo uint32_t DR;         /*!< TODO,     										Address offset: 0x10 */
-  __vo uint32_t SR1;        /*!< TODO,     										Address offset: 0x14 */
-  __vo uint32_t SR2;        /*!< TODO,     										Address offset: 0x18 */
-  __vo uint32_t CCR;        /*!< TODO,     										Address offset: 0x1C */
-  __vo uint32_t TRISE;      /*!< TODO,     										Address offset: 0x20 */
-  __vo uint32_t FLTR;       /*!< TODO,     										Address offset: 0x24 */
+  __vo uint32_t CR1;        /*!< 											Address offset: 0x00 */
+  __vo uint32_t CR2;        /*!<  											Address offset: 0x04 */
+  __vo uint32_t OAR1;       /*!<     										Address offset: 0x08 */
+  __vo uint32_t OAR2;       /*!<    										Address offset: 0x0C */
+  __vo uint32_t DR;         /*!<   											Address offset: 0x10 */
+  __vo uint32_t SR1;        /*!<    										Address offset: 0x14 */
+  __vo uint32_t SR2;        /*!<      										Address offset: 0x18 */
+  __vo uint32_t CCR;        /*!<      										Address offset: 0x1C */
+  __vo uint32_t TRISE;      /*!<      										Address offset: 0x20 */
+  __vo uint32_t FLTR;       /*!<     										Address offset: 0x24 */
 }I2C_RegDef_t;
 
 typedef struct
 {
-	__vo uint32_t SR;         /*!< TODO,     										Address offset: 0x00 */
-	__vo uint32_t DR;         /*!< TODO,     										Address offset: 0x04 */
-	__vo uint32_t BRR;        /*!< TODO,     										Address offset: 0x08 */
-	__vo uint32_t CR1;        /*!< TODO,     										Address offset: 0x0C */
-	__vo uint32_t CR2;        /*!< TODO,     										Address offset: 0x10 */
-	__vo uint32_t CR3;        /*!< TODO,     										Address offset: 0x14 */
-	__vo uint32_t GTPR;       /*!< TODO,     										Address offset: 0x18 */
+	__vo uint32_t SR;         /*!<     										Address offset: 0x00 */
+	__vo uint32_t DR;         /*!<											Address offset: 0x04 */
+	__vo uint32_t BRR;        /*!<      									Address offset: 0x08 */
+	__vo uint32_t CR1;        /*!<     										Address offset: 0x0C */
+	__vo uint32_t CR2;        /*!<     										Address offset: 0x10 */
+	__vo uint32_t CR3;        /*!<    										Address offset: 0x14 */
+	__vo uint32_t GTPR;       /*!<      									Address offset: 0x18 */
 } USART_RegDef_t;
 /*
  * peripheral register definition structure for EXTI
  */
 typedef struct
 {
-	__vo uint32_t IMR;    /*!< Give a short description,          	  	    Address offset: 0x00 */
-	__vo uint32_t EMR;    /*!< TODO,                						Address offset: 0x04 */
-	__vo uint32_t RTSR;   /*!< TODO,  									     Address offset: 0x08 */
-	__vo uint32_t FTSR;   /*!< TODO, 										Address offset: 0x0C */
-	__vo uint32_t SWIER;  /*!< TODO,  									   Address offset: 0x10 */
-	__vo uint32_t PR;     /*!< TODO,                   					   Address offset: 0x14 */
+	__vo uint32_t IMR;    /*!< 							          	  	    Address offset: 0x00 */
+	__vo uint32_t EMR;    /*!<                								Address offset: 0x04 */
+	__vo uint32_t RTSR;   /*!< 									    		Address offset: 0x08 */
+	__vo uint32_t FTSR;   /*!<												Address offset: 0x0C */
+	__vo uint32_t SWIER;  /*!<  									  		Address offset: 0x10 */
+	__vo uint32_t PR;     /*!<                    					   		Address offset: 0x14 */
 
 }EXTI_RegDef_t;
 /*
@@ -228,13 +219,13 @@ typedef struct
  */
 typedef struct
 {
-	__vo uint32_t MEMRMP;       /*!< Give a short description,                    Address offset: 0x00      */
-	__vo uint32_t PMC;          /*!< TODO,     									  Address offset: 0x04      */
-	__vo uint32_t EXTICR[4];    /*!< TODO , 									  Address offset: 0x08-0x14 */
-	uint32_t      RESERVED1[2];  /*!< TODO          							  Reserved, 0x18-0x1C    	*/
-	__vo uint32_t CMPCR;        /*!< TODO         								  Address offset: 0x20      */
-	uint32_t      RESERVED2[2];  /*!<                                             Reserved, 0x24-0x28 	    */
-	__vo uint32_t CFGR;         /*!< TODO                                         Address offset: 0x2C   	*/
+	__vo uint32_t MEMRMP;       /*!<                  					  Address offset: 0x00      */
+	__vo uint32_t PMC;          /*!< 									  Address offset: 0x04      */
+	__vo uint32_t EXTICR[4];    /*!< 									  Address offset: 0x08-0x14 */
+	uint32_t      RESERVED1[2];  /*!<    							  	  Reserved, 0x18-0x1C    	*/
+	__vo uint32_t CMPCR;        /*!<         						      Address offset: 0x20      */
+	uint32_t      RESERVED2[2];  /*!<                                     Reserved, 0x24-0x28 	    */
+	__vo uint32_t CFGR;         /*!<                                      Address offset: 0x2C   	*/
 } SYSCFG_RegDef_t;
 /*
  * peripheral definitions ( Peripheral base addresses typecasted to xxx_RegDef_t)
